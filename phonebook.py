@@ -79,15 +79,20 @@ if __name__ == '__main__':
         action_number = int(user_input)
         
         if action_number == 1:
-            add_contact(DEFAULT_DATABASE_NAME)
+            result = add_contact(DEFAULT_DATABASE_NAME)
+            print(result)
         elif action_number == 2:
-            find_contact(DEFAULT_DATABASE_NAME)
+            result = find_contact(DEFAULT_DATABASE_NAME)
+            print(result)
         elif action_number == 3:
-            edit_contact(DEFAULT_DATABASE_NAME)
+            result = edit_contact(DEFAULT_DATABASE_NAME)
+            print(result)
         elif action_number == 4:
-            delete_contact(DEFAULT_DATABASE_NAME)
+            result = delete_contact(DEFAULT_DATABASE_NAME)
+            print(result)
         elif action_number == 5:
-            list_contact(DEFAULT_DATABASE_NAME)
+            result = list_contact(DEFAULT_DATABASE_NAME)
+            print(result)
         else:
             print("Exiting program.")
             break

@@ -17,13 +17,8 @@
         },
         {
             "number": 1234567890,
-            "name": "алексєєнко",
-            "city": "київ"
-        },
-        {
-            "number": "2345678901",
-            "name": "плоролвро",
-            "city": "длівопдолд"
+            "name": "aleksieienko",
+            "city": "kyiv"
         },
         {
             "number": "3456789012",
@@ -39,6 +34,16 @@
             "number": 987890987,
             "name": "оуалодлів",
             "city": "оівдлаолдівдл"
+        },
+        {
+            "number": 6598490399,
+            "name": "jljkjll",
+            "city": "k;klk;"
+        },
+        {
+            "number": 7766699009,
+            "name": "kahkhkjh",
+            "city": "jlajjs"
         }
     ]
 }
