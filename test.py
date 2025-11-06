@@ -5,7 +5,8 @@ Design tests for this solution and write tests using unittest library"""
 import unittest
 from unittest.mock import patch, MagicMock
 from add_module import add_contact
-import delete_module,edit_module,find_module,list_module
+from delete_module import delete_contact
+import edit_module,find_module,list_module
 
 class TestPhoneBook(unittest.TestCase):
     #використовуємо моки функцій, що не будемо перевіряти
@@ -22,7 +23,7 @@ class TestPhoneBook(unittest.TestCase):
         #Перевірка результату функції
         self.assertEqual(result, {"number": 1234567890, "name": "Alice", "city": "Kyiv"})
 
-        #Перевіряємо, що save_database викликалася
+        #save_database викликалася
         mock_save_db.assert_called_once()
 
         #Перевіряємо доданий контакт
@@ -41,8 +42,11 @@ class TestPhoneBook(unittest.TestCase):
         #Перевірка результату функції
         self.assertEqual(result, "ONLY digits for number. Max number of digits - 12, min - 10")
 
-        #Перевіряємо доданий контакт НЕ додано
+        #Перевіряємо контакт НЕ додано
         self.assertEqual(mock_load_db.return_value["contacts"], result)
+
+    @patch("builtins.input", side_effect=["12345678"])
+    def test_del_success()
 
 if __name__ == "__main__":
     unittest.main()
