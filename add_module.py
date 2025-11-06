@@ -16,8 +16,8 @@ def add_contact(db_name):
     else:
         phone_number = input('enter number, only digits ').strip()
         if not phone_number.isdigit() or len(phone_number) < 10 or len(phone_number) > 12:
-            print("ONLY digits for number. Max number of digits - 12, min - 10")
-            return
+            msg = "ONLY digits for number. Max number of digits - 12, min - 10"
+            return msg
         phone_number = int(phone_number)
         name = input('enter name ').strip()
         city = input('enter city ').strip()
